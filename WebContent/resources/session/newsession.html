@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		Data: <input type="date" id="date" name="sessionDate"> <br>
+		<br> Presente: <select id="present">
+			<option>Sim</option>
+			<option>Não</option>
+		</select> <br> <br> Registro:
+		<textarea id="register">
+  </textarea>
+
+		<input type="button" value="Registrar"
+			onclick="SESSIONCRUD.session.create()" />
+
+	</form>
+	<div id="msg" style="display: none"></div>
+</body>
+</html>

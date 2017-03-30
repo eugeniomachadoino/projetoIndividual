@@ -1,0 +1,36 @@
+<meta http-equiv="Content-Type" content="text/plain; charset=UTF-8">
+<script type="text/javascript" src="resources/session/session.js"></script>
+<div class="consult">
+	<br> <br>
+	
+	<fieldset class="conteudo-fieldset" id="fieldset-contato">
+	<legend>Consulta de Sessões</legend>
+		<div class="div-form-consult">
+			Digite a data da sessão: <input id="consultsession" type="date"></input>
+		</div>
+		<div id="botaoconsulta">
+			Entre: <input id="consultsessionbet" type="date"></input>
+			<input id="consultSessions" onClick="SESSIONCRUD.session.search()" type="button" value="Buscar"/>
+		</div>
+		<div id="resultadoContatos" class="divResultado"></div>
+	</fieldset>
+
+	<div id="resultSession" class="divResult"></div>
+</div>
+
+<div id="editSession" style="display: none">
+	<div class="div-form-consult">
+		<div class="div-form">
+			<label>Data:</label> <input type="date" id="dateEdit" name="dateEdit">
+			<br>
+		</div>
+		Presente: 
+		<select id="presentEdit">
+			<option>Sim</option>
+			<option>Não</option>
+		</select> Registro:
+		<textarea id="registerEdit">
+	  		</textarea>
+	</div>
+	<input name="idUserEdit" id="idUserEdit" type="hidden"></input>
+</div>
